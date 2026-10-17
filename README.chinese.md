@@ -112,8 +112,3 @@ seth-travels/
   - `santorini-oia.jpg`（伊亚蓝顶教堂，作者 palindrome6996，CC BY 2.0）
   - `santorini-sunset.jpg`（伊亚落日，作者 Anna.Tsolidou，CC BY-SA 4.0）
   - `santorini-fira.jpg`（费拉白房子钟楼，作者 Dietmar Rabich，CC BY-SA 4.0）
-- [x] 画廊灯箱：开合、上一张/下一张、键盘、触摸滑动、焦点管理
-- [x] 页脚居中的 `CONTACT` 按钮（`mailto:` 标准协议，点击调用系统邮件客户端并自动填写收件人）
-- [x] 版权年份由 JavaScript 自动写入当前年份
-- [x] 桌面 / 平板 / 手机响应式；无横向溢出
-- [x] 无后端依赖，可任意静态托管
