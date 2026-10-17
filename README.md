@@ -112,8 +112,3 @@ seth-travels/
   - `santorini-oia.jpg` (Oia blue-domed church, by palindrome6996, CC BY 2.0)
   - `santorini-sunset.jpg` (Oia sunset, by Anna.Tsolidou, CC BY-SA 4.0)
   - `santorini-fira.jpg` (Fira white houses and clock tower, by Dietmar Rabich, CC BY-SA 4.0)
-- [x] Gallery lightbox: open/close, previous/next, keyboard, touch swipe, focus management
-- [x] Centered `CONTACT` button in the footer (standard `mailto:` protocol)
-- [x] Copyright year auto-written by JavaScript
-- [x] Responsive on desktop / tablet / mobile; no horizontal overflow
-- [x] No backend dependency, deployable to any static host
