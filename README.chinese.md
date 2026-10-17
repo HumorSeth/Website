@@ -1,5 +1,13 @@
 # The Quiet Atlas · 视觉旅行手记
 
+<div align="center">
+
+[![English](https://img.shields.io/badge/English-Readme-3d7ae4?style=for-the-badge)](README.md)
+
+</div>
+
+
+
 一个静态的个人旅行展示网站（站点名 **The Quiet Atlas**）：多页面、电影级视觉、沉浸式开场 logo 动画与摄影作品集式排版。
 纯 HTML5 + CSS3 + 原生 JavaScript，无框架、无构建步骤、无后端，可直接部署到任意静态托管。
 

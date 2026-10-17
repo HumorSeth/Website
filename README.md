@@ -3,6 +3,13 @@
 A static personal travel showcase website (site name **The Quiet Atlas**): multi-page, cinematic visuals, an immersive logo intro animation, and a photography-portfolio-style layout.
 Pure HTML5 + CSS3 + vanilla JavaScript — no framework, no build step, no backend — deployable to any static host.
 
+<div align="center">
+
+[![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-%E9%98%85%E8%AF%BB%E4%B8%AD%E6%96%87%E7%89%88-e43d3d?style=for-the-badge)](README.chinese.md)
+
+</div>
+
+
 ---
 
 > The travel stories, observations, and statistics on the site are placeholder demo text, easy to replace: simply rewrite the relevant paragraphs in each page's HTML (long-form text lives in `destinations/*.html` under `.story`, and `places.html` under `.place-story`).
@@ -51,7 +58,8 @@ seth-travels/
 │   └── js/gallery.js     Gallery lightbox (keyboard / touch / focus management)
 ├── robots.txt            Crawler rules
 ├── sitemap.xml           Sitemap (16 pages)
-└── README.md
+├── README.md             This file (English)
+└── README.chinese.md     Chinese version (中文版)
 ```
 
 ## 3. Deploying to Static Hosting
@@ -64,16 +72,17 @@ seth-travels/
 
 | What to change | Where |
 | --- | --- |
-| Site name (browser title) | Each HTML `<title>`, in the form `PAGE — Section \| The Quiet Atlas` |
+| Site name (browser title) | Each HTML `<title>`, in the form `PAGE — Section | The Quiet Atlas` |
 | Site name (intro wordmark) | The `The Quiet Atlas` text that fades in below the logo in the intro, in each page's `<p class="intro-brand">` (15 pages have an intro layer; `interests.html` has none) |
+| Site name (nav wordmark) | The `The Quiet Atlas` text to the right of the nav logo, in each page's `<span class="logo-word">` inside `.nav-logo` |
 | Personal name (About page & home body) | `<em>Seth</em>` in `about.html`, the `— Seth` signature and `About Seth` button in `index.html` |
-| Graphic logo (Horizon compass mark) | Inline SVG (three places per page: `.intro` intro, `.nav-logo`, `.footer-logo`), unified class `.logo-horizon`, 9 `.stage` groups drawn from outside inward. The SVG source is defined in the `logo-horizon` section of `assets/css/main.css` (drawing animation, timing `--at`, easing all adjustable there); `<link rel="icon">` points to `assets/img/favicon.png` and `assets/img/favicon.ico`. To change the mark, replace each page's `<svg class="logo-horizon">…</svg>` and the two favicons |
-| Contact email | Search `onion@humorseth.com`: appears in the centered `CONTACT` button in the footer (`.footer-contact`, `class="btn"`) and in the mobile menu's `CONTACT · 联系我` — both use a standard `mailto:` (the footer button pre-fills the subject `Hello Seth`) |
+| Graphic logo (Horizon compass mark) | Inline SVG (three places per page: `.intro` intro, `.nav-logo`, `.footer-logo`), unified class `.logo-horizon`, 9 `.stage` groups drawn from outside inward. `<link rel="icon">` points to `assets/img/favicon.png` and `assets/img/favicon.ico` |
+| Contact email | Search `onion@humorseth.com`: appears in the centered `CONTACT` button in the footer (`.footer-contact`) and in the mobile menu's `CONTACT · 联系我` — both use a standard `mailto:` (the footer button pre-fills the subject `Hello Seth`) |
 | Copyright year | Nothing to change: the footer `<span data-year>` is written by `main.js` using `new Date()` each year (auto-follows 2026 → 2027) |
-| Long-form travel writing | The 5 body paragraphs inside `<div class="story">` in `destinations/*.html`; each row's `<p class="place-story">` in `places.html`; each detail page's `.story` also contains a `<figure class="story-figure">` illustration (centered spacing controlled by `.story-figure`) |
+| Long-form travel writing | The 5 body paragraphs inside `<div class="story">` in `destinations/*.html`; each row's `<p class="place-story">` in `places.html` |
 | Theme colors / fonts / spacing | The `:root` custom properties at the top of `assets/css/main.css` (`--ink`, `--paper`, `--accent`, `--serif`, `--sans`, `--mono`, `--ease-*`, etc.) |
-| Animation duration & easing | Same place — the `--ease-*` variables in `:root`; the drawing animation timing lives in each page's `.stage` `--at` and `--line-duration` (see the `logo-horizon` section of `main.css`) |
-| Images | All localized in `assets/img/` (51 `.jpg` + 1 `.png`, direct relative-path references, no remote image dependencies). Replace by overwriting the same filename; `.frame`, `.g-item`, and `.place-media` handle cropping automatically |
+| Animation duration & easing | The `--ease-*` variables in `:root`; the drawing animation timing lives in each page's `.stage` `--at` and `--line-duration` (see the `logo-horizon` section of `main.css`) |
+| Images | All localized in `assets/img/` (51 `.jpg` + 1 `.png`, direct relative-path references, no remote image dependencies). Replace by overwriting the same filename |
 | Destination / place / journal content | Edit the HTML text paragraphs directly — keep the structure and class names unchanged to inherit all styles |
 | About page & statistics | `about.html` (the numbers in `.stat-num b[data-count]` are read by the count-up animation) |
 
@@ -87,7 +96,7 @@ seth-travels/
 - **Image strategy**: the hero uses a CSS background; other images have fixed aspect ratios (`width`/`height` attributes + `aspect-ratio`) to avoid layout shift, plus `loading="lazy"` + `decoding="async"`, degrading gracefully to a tonal placeholder on load failure. All images are localized — no external image services.
 - **Fonts**: Cormorant Garamond + Inter are self-hosted in `assets/css/fonts.css` (`assets/fonts/*.woff2`, Google Fonts latin subset) — zero external font dependencies, with a graceful fallback to system serif/sans stacks.
 - **Image licensing**: 51 demo images in `assets/img/` (no remote image host). Roughly 35 come from [Unsplash](https://unsplash.com) (Unsplash License: free for commercial and non-commercial use, no attribution required, but images may not be resold as-is), saved locally; 16 come from [Wikimedia Commons](https://commons.wikimedia.org) (free licenses, see the attribution list below). For production release, replace them with your own or properly licensed photos.
-- **Graphic mark**: the logo is an inline-SVG Horizon compass (compass ring, star flare, portal pillars, horizon, orbit and planet, mountains, river, and other elements, with a drawing animation). The nav and footer icons are the same SVG (`class="logo-replay"`), drawing once on hover and stopping; the intro is the auto-playing version of the same SVG (`class="playing"`). To change the mark, replace each page's inline SVG and `assets/img/favicon.png`.
+- **Graphic mark**: the logo is an inline-SVG Horizon compass (compass ring, star flare, portal pillars, horizon, orbit and planet, mountains, river, and other elements, with a drawing animation). The nav icon (`class="logo-replay"`) loops the drawing automatically, fades out on scroll and reappears at the top, with the site name `The Quiet Atlas` to its right (`<span class="logo-word">`); the footer icon is the same SVG, drawing once on hover and stopping; the intro is the auto-playing version of the same SVG (`class="playing"`). To change the mark, replace each page's inline SVG and `assets/img/favicon.png`.
 - **Local images** (`assets/img/`, all from [Wikimedia Commons](https://commons.wikimedia.org), free licenses; verify attribution on the original file pages before release):
   - `amalfi-coast.jpg` (Amalfi Coast), `santorini.jpg` (Santorini, Oia), `louvre.jpg` (Louvre Pyramid at night)
   - `kyoto-path.jpg` (mallards in the canal along the Philosopher's Path, by KimonBerlin, CC BY-SA 2.0)
@@ -103,3 +112,13 @@ seth-travels/
   - `santorini-oia.jpg` (Oia blue-domed church, by palindrome6996, CC BY 2.0)
   - `santorini-sunset.jpg` (Oia sunset, by Anna.Tsolidou, CC BY-SA 4.0)
   - `santorini-fira.jpg` (Fira white houses and clock tower, by Dietmar Rabich, CC BY-SA 4.0)
+
+## 6. Acceptance Checklist
+
+- [x] Hero brand logo animation (Horizon compass drawing reveal, skippable, plays once per session)
+- [x] Six navigation entries are all real pages, current page highlighted, back/forward/direct access supported
+- [x] Gallery lightbox: open/close, previous/next, keyboard, touch swipe, focus management
+- [x] Centered `CONTACT` button in the footer (standard `mailto:` protocol)
+- [x] Copyright year auto-written by JavaScript
+- [x] Responsive on desktop / tablet / mobile; no horizontal overflow
+- [x] No backend dependency, deployable to any static host
