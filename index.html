@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Quiet Atlas — 视觉旅行手记</title>
+  <meta name="description" content="The Quiet Atlas 的个人旅行展示网站：目的地、景点、旅行日志与摄影画廊。把世界走成一本安静的书。">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <meta property="og:site_name" content="The Quiet Atlas">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Quiet Atlas — 视觉旅行手记">
+  <meta property="og:description" content="The Quiet Atlas 的个人旅行展示网站：目的地、景点、旅行日志与摄影画廊。把世界走成一本安静的书。">
+  <meta property="og:image" content="https://humorseth.com/assets/img/alps-dusk.jpg">
+  <meta property="og:url" content="https://humorseth.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" as="image" href="assets/img/alps-dusk.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">跳到主要内容</a>
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><span class="mark" aria-hidden="true"><svg class="logo-horizon logo-replay" viewBox="0 0 512 512" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <g class="logo-sequence">
+            <g class="vector-art" transform="translate(76.8 76.8) scale(.7)">
+              <!-- 1. The first point and its compass axes -->
+              <g class="stage s1">
+                <circle class="core-glow" cx="256" cy="256" r="4"/>
+                <circle class="core" cx="256" cy="256" r="2.7"/>
+                <path class="draw fine" d="M256 56V456"/>
+                <path class="guide" fill="none" stroke="#f4eadc" stroke-width="1.6" d="M56 256H456"/>
+              </g>
+              <!-- 2. The compass ring and its two stars -->
+              <g class="stage s2">
+                <circle class="draw" cx="256" cy="256" r="184"/>
+                <circle class="draw fine" cx="256" cy="256" r="151"/>
+                <path class="draw fine" d="M256 72V440"/>
+                <path class="guide" fill="none" stroke="#f4eadc" stroke-width="1.6" d="M72 256H440"/>
+                <path class="pole-star" d="M256 39C252 61 247 68 229 72C247 76 252 83 256 105C260 83 265 76 283 72C265 68 260 61 256 39Z"/>
+                <path class="pole-star" d="M256 407C252 429 247 436 229 440C247 444 252 451 256 473C260 451 265 444 283 440C265 436 260 429 256 407Z"/>
+              </g>
+              <!-- 3. The paired portal pillars -->
+              <g class="stage s3">
+                <path class="draw bold" d="M126 139H193Q177 147 177 169V341Q177 376 146 393Q158 378 158 353V174Q158 149 126 139Z"/>
+                <path class="draw bold" d="M386 139H319Q335 147 335 169V341Q335 376 366 393Q354 378 354 353V174Q354 149 386 139Z"/>
+                <path class="draw fine" d="M141 150Q162 163 162 187V348Q162 373 148 382M371 150Q350 163 350 187V348Q350 373 364 382"/>
+              </g>
+              <!-- 4. Horizon and rising sun -->
+              <g class="stage s4">
+                <path class="draw" d="M108 282A148 148 0 0 1 404 282"/>
+                <path class="draw" d="M181 251A77 77 0 0 1 331 251"/>
+                <path class="draw bold" d="M201 280A55 55 0 0 1 311 280"/>
+                <path class="draw fine" d="M100 280Q178 235 256 260Q334 235 412 280"/>
+              </g>
+              <!-- 5. The sweeping orbital path and its moon -->
+              <g class="stage s5">
+                <path class="draw bold" d="M37 318C32 300 65 282 124 267C215 244 354 225 432 185C464 169 483 151 480 136C477 121 449 116 412 121"/>
+                <circle class="draw" cx="480" cy="136" r="13"/>
+              </g>
+              <!-- 6. Mountain peaks inside the portal -->
+              <g class="stage s6">
+                <path class="draw bold" d="M115 328L205 277L232 255L252 270L296 242L328 267L348 256L378 279L398 293"/>
+                <path class="draw fine" d="M205 277L193 293L232 270M296 242L286 260L310 255L328 267M348 256L341 270L360 266"/>
+                <path class="draw fine" d="M148 313Q190 288 205 277M329 283L367 303"/>
+              </g>
+              <!-- 7. The winding river -->
+              <g class="stage s7">
+                <path class="draw bold" d="M257 307C302 312 331 319 321 329C310 341 238 341 220 356C200 373 264 384 291 401C313 415 290 433 259 447"/>
+                <path class="draw fine" d="M250 311C285 316 311 320 305 329C296 340 230 345 214 359C194 377 257 391 280 405C298 417 279 433 253 445"/>
+                <path class="draw fine" d="M266 312C318 318 345 326 334 338C320 353 255 352 235 365C219 377 280 394 302 409C318 421 297 439 267 450"/>
+              </g>
+              <!-- 8. The inner globe and lower architectural contours -->
+              <g class="stage s8">
+                <path class="draw fine" d="M106 145A184 184 0 0 0 106 367M406 145A184 184 0 0 1 406 367"/>
+                <path class="draw fine" d="M151 392Q174 422 216 433M361 392Q338 422 296 433"/>
+                <path class="draw fine" d="M177 169V344M335 169V344"/>
+              </g>
+              <!-- 9. Finish the outer sweep, polar stars and final connecting strokes -->
+              <g class="stage s9">
+                <path class="draw fine" d="M177 280Q214 264 256 269Q298 264 335 280"/>
+                <path class="draw fine" d="M145 394Q256 478 367 394"/>
+              </g>
+            </g>
+          </g>
+        </svg></span><span class="logo-word">The Quiet Atlas</span></a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="index.html" class="is-active" aria-current="page">HOME</a>
+      <a href="destinations.html">DESTINATIONS</a>
+      <a href="places.html">PLACES</a>
+      <a href="journal.html">JOURNAL</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="about.html">ABOUT</a>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="打开菜单"><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-menu" id="site-menu" aria-hidden="true">
+  <div class="nav-menu-inner">
+    <nav aria-label="移动端导航">
+        <a href="index.html"><span class="menu-num">01</span>HOME</a>
+        <a href="destinations.html"><span class="menu-num">02</span>DESTINATIONS</a>
+        <a href="places.html"><span class="menu-num">03</span>PLACES</a>
+        <a href="journal.html"><span class="menu-num">04</span>JOURNAL</a>
+        <a href="gallery.html"><span class="menu-num">05</span>GALLERY</a>
+        <a href="about.html"><span class="menu-num">06</span>ABOUT</a>
+    </nav>
+    <div class="nav-menu-foot">
+      <a href="mailto:onion@humorseth.com">CONTACT · 联系我</a>
+      <span>THE QUIET ATLAS — 把世界走成一本安静的书</span>
+    </div>
+  </div>
+</div>
+<div class="intro" id="intro" role="presentation">
+  <div class="intro-inner">
+    <div class="intro-mark" aria-hidden="true">
+      <svg class="logo-horizon" viewBox="0 0 512 512" role="img" aria-label="Horizon compass logo" xmlns="http://www.w3.org/2000/svg">
+          <g class="logo-sequence">
+            <g class="vector-art" transform="translate(76.8 76.8) scale(.7)">
+              <!-- 1. The first point and its compass axes -->
+              <g class="stage s1">
+                <circle class="core-glow" cx="256" cy="256" r="4"/>
+                <circle class="core" cx="256" cy="256" r="2.7"/>
+                <path class="draw fine" d="M256 56V456"/>
+                <path class="guide" fill="none" stroke="#f4eadc" stroke-width="1.6" d="M56 256H456"/>
+              </g>
+              <!-- 2. The compass ring and its two stars -->
+              <g class="stage s2">
+                <circle class="draw" cx="256" cy="256" r="184"/>
+                <circle class="draw fine" cx="256" cy="256" r="151"/>
+                <path class="draw fine" d="M256 72V440"/>
+                <path class="guide" fill="none" stroke="#f4eadc" stroke-width="1.6" d="M72 256H440"/>
+                <path class="pole-star" d="M256 39C252 61 247 68 229 72C247 76 252 83 256 105C260 83 265 76 283 72C265 68 260 61 256 39Z"/>
+                <path class="pole-star" d="M256 407C252 429 247 436 229 440C247 444 252 451 256 473C260 451 265 444 283 440C265 436 260 429 256 407Z"/>
+              </g>
+              <!-- 3. The paired portal pillars -->
+              <g class="stage s3">
+                <path class="draw bold" d="M126 139H193Q177 147 177 169V341Q177 376 146 393Q158 378 158 353V174Q158 149 126 139Z"/>
+                <path class="draw bold" d="M386 139H319Q335 147 335 169V341Q335 376 366 393Q354 378 354 353V174Q354 149 386 139Z"/>
+                <path class="draw fine" d="M141 150Q162 163 162 187V348Q162 373 148 382M371 150Q350 163 350 187V348Q350 373 364 382"/>
+              </g>
+              <!-- 4. Horizon and rising sun -->
+              <g class="stage s4">
+                <path class="draw" d="M108 282A148 148 0 0 1 404 282"/>
+                <path class="draw" d="M181 251A77 77 0 0 1 331 251"/>
+                <path class="draw bold" d="M201 280A55 55 0 0 1 311 280"/>
+                <path class="draw fine" d="M100 280Q178 235 256 260Q334 235 412 280"/>
+              </g>
+              <!-- 5. The sweeping orbital path and its moon -->
+              <g class="stage s5">
+                <path class="draw bold" d="M37 318C32 300 65 282 124 267C215 244 354 225 432 185C464 169 483 151 480 136C477 121 449 116 412 121"/>
+                <circle class="draw" cx="480" cy="136" r="13"/>
+              </g>
+              <!-- 6. Mountain peaks inside the portal -->
+              <g class="stage s6">
+                <path class="draw bold" d="M115 328L205 277L232 255L252 270L296 242L328 267L348 256L378 279L398 293"/>
+                <path class="draw fine" d="M205 277L193 293L232 270M296 242L286 260L310 255L328 267M348 256L341 270L360 266"/>
+                <path class="draw fine" d="M148 313Q190 288 205 277M329 283L367 303"/>
+              </g>
+              <!-- 7. The winding river -->
+              <g class="stage s7">
+                <path class="draw bold" d="M257 307C302 312 331 319 321 329C310 341 238 341 220 356C200 373 264 384 291 401C313 415 290 433 259 447"/>
+                <path class="draw fine" d="M250 311C285 316 311 320 305 329C296 340 230 345 214 359C194 377 257 391 280 405C298 417 279 433 253 445"/>
+                <path class="draw fine" d="M266 312C318 318 345 326 334 338C320 353 255 352 235 365C219 377 280 394 302 409C318 421 297 439 267 450"/>
+              </g>
+              <!-- 8. The inner globe and lower architectural contours -->
+              <g class="stage s8">
+                <path class="draw fine" d="M106 145A184 184 0 0 0 106 367M406 145A184 184 0 0 1 406 367"/>
+                <path class="draw fine" d="M151 392Q174 422 216 433M361 392Q338 422 296 433"/>
+                <path class="draw fine" d="M177 169V344M335 169V344"/>
+              </g>
+              <!-- 9. Finish the outer sweep, polar stars and final connecting strokes -->
+              <g class="stage s9">
+                <path class="draw fine" d="M177 280Q214 264 256 269Q298 264 335 280"/>
+                <path class="draw fine" d="M145 394Q256 478 367 394"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+    </div>
+    <p class="intro-brand">The Quiet Atlas</p>
+  </div>
+</div>
+<main id="main">
+
+<section class="hero">
+  <div class="hero-media" style="background-image:url('assets/img/alps-dusk.jpg')" role="img" aria-label="黄昏时分的瑞士山湖——暮色中的山峰与水面"></div>
+  <div class="hero-inner container">
+    <p class="hero-meta fade-up" style="--d:.4s"><span>N 46.55° · E 7.98°</span><span class="meta-sep" aria-hidden="true"></span><span>The Alps — Switzerland</span></p>
+    <h1 class="hero-title">
+      <span class="line" style="--d:.55s"><span class="line-inner">The world,</span></span>
+      <span class="line" style="--d:.7s"><span class="line-inner"><em>quietly</em> kept.</span></span>
+    </h1>
+    <p class="hero-sub fade-up" style="--d:.9s">山川、海岸与城市 —— 一场缓慢而长久的旅行。</p>
+    <div class="hero-cta fade-up" style="--d:1.05s">
+      <a class="btn" href="destinations.html"><span>Explore Destinations</span><span class="btn-arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn--ghost" href="journal.html"><span>Read the Journal</span></a>
+    </div>
+  </div>
+  <a class="scroll-cue fade-up" href="#manifesto" style="--d:1.35s" aria-label="向下滚动到旅行宣言"><span class="scroll-text">Scroll</span><span class="scroll-line" aria-hidden="true"></span></a>
+</section>
+
+<section class="section manifesto" id="manifesto">
+  <div class="container manifesto-grid">
+    <div class="manifesto-text">
+      <p class="kicker" data-reveal>Manifesto — 旅行宣言</p>
+      <h2 class="section-title mask" data-reveal><span class="mask-inner">I collect <em>light</em>.</span></h2>
+      <p class="lead" data-reveal style="--d:.15s">我收集的不是景点，而是光落下的方式：清晨五点半雾里的京都，极夜尽头第一缕天光，黄昏把阿马尔菲的彩色房子一栋栋点亮。把一个陌生的地名慢慢走成自己的记忆——这是旅行的全部意义。</p>
+      <p class="signature" data-reveal style="--d:.25s">— Seth</p>
+    </div>
+    <figure class="manifesto-media frame frame--reveal ratio-4x5" data-reveal>
+      <img src="assets/img/aurora.jpg" alt="冰岛夜空下的极光" width="1600" height="1068" loading="lazy" decoding="async" onerror="this.classList.add('img-fallback')">
+    </figure>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-set"><span>KYOTO</span><i>·</i><span>ICELAND</span><i>·</i><span>SWISS ALPS</span><i>·</i><span>AMALFI</span><i>·</i><span>PARIS</span><i>·</i><span>NEW YORK</span><i>·</i></div>
+    <div class="marquee-set"><span>KYOTO</span><i>·</i><span>ICELAND</span><i>·</i><span>SWISS ALPS</span><i>·</i><span>AMALFI</span><i>·</i><span>PARIS</span><i>·</i><span>NEW YORK</span><i>·</i></div>
+  </div>
+</div>
+
+<section class="section" id="destinations">
+  <div class="container">
+    <header class="section-head" data-reveal>
+      <span class="kicker">01 — Destinations</span>
+      <h2 class="mask"><span class="mask-inner">Chosen <em>places</em></span></h2>
+      <p class="lead">六个想去、又愿意一去再去的地方，按光线、季节与心情整理。</p>
+    </header>
+    <div class="dest-grid">
+      <article class="dest-card" data-reveal>
+        <a class="dest-media frame ratio-4x3" href="destinations/kyoto.html">
+          <img src="assets/img/kiyomizu.jpg" alt="京都东山：暮色中的塔与街市" width="1600" height="1067" loading="lazy" decoding="async">
+          <span class="dest-num">01</span>
+        </a>
+        <div class="dest-body">
+          <h3><a href="destinations/kyoto.html">KYOTO<span class="dest-cn">京都</span></a></h3>
+          <p class="dest-country">Japan · 35.0116°N 135.7681°E</p>
+          <p class="dest-blurb">千年古都，四季分明。庙宇、町屋与苔庭，构成一种缓慢的美学。</p>
+          <a class="text-link" href="destinations/kyoto.html">Explore <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="dest-card" data-reveal style="--d:.08s">
+        <a class="dest-media frame ratio-4x3" href="destinations/iceland.html">
+          <img src="assets/img/glacier-lagoon.jpg" alt="冰河湖上的浮冰与冰川" width="1600" height="1067" loading="lazy" decoding="async">
+          <span class="dest-num">02</span>
+        </a>
+        <div class="dest-body">
+          <h3><a href="destinations/iceland.html">ICELAND<span class="dest-cn">冰岛</span></a></h3>
+          <p class="dest-country">Iceland · 64.9631°N 19.0208°W</p>
+          <p class="dest-blurb">冰川、火山与瀑布同框的土地，像地球刚刚成形时的样子。</p>
+          <a class="text-link" href="destinations/iceland.html">Explore <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="dest-card" data-reveal style="--d:.16s">
+        <a class="dest-media frame ratio-4x3" href="destinations/alps.html">
+          <img src="assets/img/matterhorn.jpg" alt="马特洪峰倒映在平静的湖面" width="1600" height="1067" loading="lazy" decoding="async">
+          <span class="dest-num">03</span>
+        </a>
+        <div class="dest-body">
+          <h3><a href="destinations/alps.html">SWISS ALPS<span class="dest-cn">瑞士阿尔卑斯</span></a></h3>
+          <p class="dest-country">Switzerland · 46.0207°N 7.7491°E</p>
+          <p class="dest-blurb">火车贴着山脊行走，湖泊盛着雪线，徒步者在天光里变小。</p>
+          <a class="text-link" href="destinations/alps.html">Explore <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="dest-card" data-reveal>
+        <a class="dest-media frame ratio-4x3" href="destinations/amalfi.html">
+          <img src="assets/img/positano.jpg" alt="波西塔诺悬崖上的彩色房屋" width="1100" height="1656" loading="lazy" decoding="async">
+          <span class="dest-num">04</span>
+        </a>
+        <div class="dest-body">
+          <h3><a href="destinations/amalfi.html">AMALFI<span class="dest-cn">阿马尔菲海岸</span></a></h3>
+          <p class="dest-country">Italy · 40.6353°N 14.6024°E</p>
+          <p class="dest-blurb">悬崖上的彩色小镇，柠檬香与海风一样浓。</p>
+          <a class="text-link" href="destinations/amalfi.html">Explore <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="dest-card" data-reveal style="--d:.08s">
+        <a class="dest-media frame ratio-4x3" href="destinations/paris.html">
+          <img src="assets/img/seine-tower.jpg" alt="塞纳河与埃菲尔铁塔的经典视角" width="1600" height="1064" loading="lazy" decoding="async">
+          <span class="dest-num">05</span>
+        </a>
+        <div class="dest-body">
+          <h3><a href="destinations/paris.html">PARIS<span class="dest-cn">巴黎</span></a></h3>
+          <p class="dest-country">France · 48.8566°N 2.3522°E</p>
+          <p class="dest-blurb">光的城市。清晨的塞纳河、黄昏的屋顶、夜里亮着灯的咖啡馆。</p>
+          <a class="text-link" href="destinations/paris.html">Explore <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      <article class="dest-card" data-reveal style="--d:.16s">
+        <a class="dest-media frame ratio-4x3" href="destinations/nyc.html">
+          <img src="assets/img/nyc-bridge.jpg" alt="纽约曼哈顿天际线与桥" width="1600" height="1068" loading="lazy" decoding="async">
+          <span class="dest-num">06</span>
+        </a>
+        <div class="dest-body">
+          <h3><a href="destinations/nyc.html">NEW YORK<span class="dest-cn">纽约</span></a></h3>
+          <p class="dest-country">USA · 40.7128°N 74.0060°W</p>
+          <p class="dest-blurb">水泥峡谷里的落日，24 小时不睡的城市节奏。</p>
+          <a class="text-link" href="destinations/nyc.html">Explore <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="section-more" data-reveal><a class="text-link" href="destinations.html">View all destinations <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<section class="section" id="feature">
+  <div class="container feature-grid">
+    <div class="feature-media frame frame--reveal ratio-4x3" data-reveal>
+      <div class="parallax-wrap">
+        <div class="parallax-media" data-parallax="0.14" style="background-image:url('assets/img/kyoto-street.jpg')" role="img" aria-label="京都街巷的灯笼与和服剪影（黄昏）"></div>
+      </div>
+    </div>
+    <div class="feature-body" data-reveal style="--d:.15s">
+      <p class="kicker">02 — Featured Place</p>
+      <h2 class="mask"><span class="mask-inner">Gion</span></h2>
+      <p class="feature-cn">祇园 · 京都</p>
+      <p class="lead" style="margin-top:0">石板路、町屋与纸灯笼。黄昏最动人的时候，帘子被风掀起，木屐声由远及近，一盏盏灯在门帘后亮起来。在祇园走路要慢一些——这里先是居民区，然后才是风景。</p>
+      <ul class="facts">
+        <li><span>位置</span><b>东山区 · 花见小路</b></li>
+        <li><span>最佳时刻</span><b>黄昏 · 蓝调时分</b></li>
+        <li><span>礼仪</span><b>勿追拍艺伎 · 私人巷道禁入</b></li>
+      </ul>
+      <a class="btn" href="places.html#gion"><span>View all places</span><span class="btn-arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="journal">
+  <div class="container">
+    <header class="section-head" data-reveal>
+      <span class="kicker">03 — Journal</span>
+      <h2 class="mask"><span class="mask-inner">Field <em>notes</em></span></h2>
+      <p class="lead">旅途随笔——把路上的片刻，写成可以回放的文字。</p>
+    </header>
+    <div class="journal-grid">
+      <article class="j-card" data-reveal>
+        <a class="j-media frame ratio-16x10" href="journal.html#note-kyoto">
+          <img src="assets/img/kyoto-lantern.jpg" alt="京都祇园町屋小巷里撑伞的和服行人" width="1600" height="1103" loading="lazy" decoding="async">
+        </a>
+        <p class="j-date">2024.11 — KYOTO, JAPAN</p>
+        <h3><a href="journal.html#note-kyoto">《京都 · 雨里的哲学之道》</a></h3>
+        <p class="j-excerpt">那天下了一整天的雨。雨点敲在町屋的瓦上，声音细密而均匀。我收起相机，第一次没有举起它……</p>
+        <a class="text-link" href="journal.html#note-kyoto">Read note <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="j-card" data-reveal style="--d:.1s">
+        <a class="j-media frame ratio-16x10" href="journal.html#note-iceland">
+          <img src="assets/img/aurora.jpg" alt="冰岛上空舞动的极光" width="1600" height="1068" loading="lazy" decoding="async">
+        </a>
+        <p class="j-date">2025.09 — ICELAND</p>
+        <h3><a href="journal.html#note-iceland">《冰岛 · 环岛第七天》</a></h3>
+        <p class="j-excerpt">第七天，风从北边来。冰河湖上的浮冰慢慢漂向出海口，像一艘艘忘了靠岸的船。峡谷里的河在苔藓之间切开一条线……</p>
+        <a class="text-link" href="journal.html#note-iceland">Read note <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="j-card" data-reveal style="--d:.2s">
+        <a class="j-media frame ratio-16x10" href="journal.html#note-amalfi">
+          <img src="assets/img/amalfi-coast.jpg" alt="阿马尔菲海岸：悬崖上的小镇与海" width="1600" height="1200" loading="lazy" decoding="async">
+        </a>
+        <p class="j-date">2025.05 — AMALFI, ITALY</p>
+        <h3><a href="journal.html#note-amalfi">《阿马尔菲 · 柠檬与海》</a></h3>
+        <p class="j-excerpt">柠檬在这里不是一种水果，是一种气味、一种颜色、一种生活。码头的渡轮把日光切成碎金……</p>
+        <a class="text-link" href="journal.html#note-amalfi">Read note <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery-teaser">
+  <div class="container">
+    <header class="section-head" data-reveal>
+      <span class="kicker">04 — Gallery</span>
+      <h2 class="mask"><span class="mask-inner">Frames</span></h2>
+      <p class="lead">光影存档。点击任意一张，进入摄影画廊。</p>
+    </header>
+    <div class="strip-grid">
+      <a class="strip-item" href="gallery.html" data-reveal>
+        <img src="assets/img/lake-boat.jpg" alt="山间湖泊与湖畔的小船" width="1600" height="1067" loading="lazy" decoding="async">
+        <span class="strip-cap">Alpine Lake — Europe</span>
+      </a>
+      <a class="strip-item" href="gallery.html" data-reveal style="--d:.08s">
+        <img src="assets/img/venice-canal2.jpg" alt="威尼斯运河与贡多拉" width="1100" height="1668" loading="lazy" decoding="async">
+        <span class="strip-cap">Venice — Italy</span>
+      </a>
+      <a class="strip-item" href="gallery.html" data-reveal style="--d:.16s">
+        <img src="assets/img/santorini.jpg" alt="圣托里尼伊亚的蓝顶教堂与白房子" width="1600" height="1067" loading="lazy" decoding="async">
+        <span class="strip-cap">Santorini — Greece</span>
+      </a>
+      <a class="strip-item" href="gallery.html" data-reveal style="--d:.24s">
+        <img src="assets/img/torii.jpg" alt="千本鸟居的朱红隧道" width="1600" height="1067" loading="lazy" decoding="async">
+        <span class="strip-cap">Senbon Torii — Kyoto</span>
+      </a>
+      <a class="strip-item" href="gallery.html" data-reveal style="--d:.32s">
+        <img src="assets/img/tokyo-crossing2.jpg" alt="东京涩谷夜景" width="1600" height="1038" loading="lazy" decoding="async">
+        <span class="strip-cap">Shibuya — Tokyo</span>
+      </a>
+    </div>
+    <p class="section-more" data-reveal><a class="text-link" href="gallery.html">Open gallery <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner" data-reveal>
+    <h2 class="mask"><span class="mask-inner">Start <em>somewhere.</em></span></h2>
+    <p>选一个方向，或者先听听旅途里的故事。</p>
+    <div class="hero-cta">
+      <a class="btn" href="destinations.html"><span>Destinations</span><span class="btn-arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn--ghost" href="about.html"><span>About Seth</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-logo"><span class="mark" aria-hidden="true"><svg class="logo-horizon logo-replay" viewBox="0 0 512 512" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <g class="logo-sequence">
+            <g class="vector-art" transform="translate(76.8 76.8) scale(.7)">
+              <!-- 1. The first point and its compass axes -->
+              <g class="stage s1">
+                <circle class="core-glow" cx="256" cy="256" r="4"/>
+                <circle class="core" cx="256" cy="256" r="2.7"/>
+                <path class="draw fine" d="M256 56V456"/>
+                <path class="guide" fill="none" stroke="#f4eadc" stroke-width="1.6" d="M56 256H456"/>
+              </g>
+              <!-- 2. The compass ring and its two stars -->
+              <g class="stage s2">
+                <circle class="draw" cx="256" cy="256" r="184"/>
+                <circle class="draw fine" cx="256" cy="256" r="151"/>
+                <path class="draw fine" d="M256 72V440"/>
+                <path class="guide" fill="none" stroke="#f4eadc" stroke-width="1.6" d="M72 256H440"/>
+                <path class="pole-star" d="M256 39C252 61 247 68 229 72C247 76 252 83 256 105C260 83 265 76 283 72C265 68 260 61 256 39Z"/>
+                <path class="pole-star" d="M256 407C252 429 247 436 229 440C247 444 252 451 256 473C260 451 265 444 283 440C265 436 260 429 256 407Z"/>
+              </g>
+              <!-- 3. The paired portal pillars -->
+              <g class="stage s3">
+                <path class="draw bold" d="M126 139H193Q177 147 177 169V341Q177 376 146 393Q158 378 158 353V174Q158 149 126 139Z"/>
+                <path class="draw bold" d="M386 139H319Q335 147 335 169V341Q335 376 366 393Q354 378 354 353V174Q354 149 386 139Z"/>
+                <path class="draw fine" d="M141 150Q162 163 162 187V348Q162 373 148 382M371 150Q350 163 350 187V348Q350 373 364 382"/>
+              </g>
+              <!-- 4. Horizon and rising sun -->
+              <g class="stage s4">
+                <path class="draw" d="M108 282A148 148 0 0 1 404 282"/>
+                <path class="draw" d="M181 251A77 77 0 0 1 331 251"/>
+                <path class="draw bold" d="M201 280A55 55 0 0 1 311 280"/>
+                <path class="draw fine" d="M100 280Q178 235 256 260Q334 235 412 280"/>
+              </g>
+              <!-- 5. The sweeping orbital path and its moon -->
+              <g class="stage s5">
+                <path class="draw bold" d="M37 318C32 300 65 282 124 267C215 244 354 225 432 185C464 169 483 151 480 136C477 121 449 116 412 121"/>
+                <circle class="draw" cx="480" cy="136" r="13"/>
+              </g>
+              <!-- 6. Mountain peaks inside the portal -->
+              <g class="stage s6">
+                <path class="draw bold" d="M115 328L205 277L232 255L252 270L296 242L328 267L348 256L378 279L398 293"/>
+                <path class="draw fine" d="M205 277L193 293L232 270M296 242L286 260L310 255L328 267M348 256L341 270L360 266"/>
+                <path class="draw fine" d="M148 313Q190 288 205 277M329 283L367 303"/>
+              </g>
+              <!-- 7. The winding river -->
+              <g class="stage s7">
+                <path class="draw bold" d="M257 307C302 312 331 319 321 329C310 341 238 341 220 356C200 373 264 384 291 401C313 415 290 433 259 447"/>
+                <path class="draw fine" d="M250 311C285 316 311 320 305 329C296 340 230 345 214 359C194 377 257 391 280 405C298 417 279 433 253 445"/>
+                <path class="draw fine" d="M266 312C318 318 345 326 334 338C320 353 255 352 235 365C219 377 280 394 302 409C318 421 297 439 267 450"/>
+              </g>
+              <!-- 8. The inner globe and lower architectural contours -->
+              <g class="stage s8">
+                <path class="draw fine" d="M106 145A184 184 0 0 0 106 367M406 145A184 184 0 0 1 406 367"/>
+                <path class="draw fine" d="M151 392Q174 422 216 433M361 392Q338 422 296 433"/>
+                <path class="draw fine" d="M177 169V344M335 169V344"/>
+              </g>
+              <!-- 9. Finish the outer sweep, polar stars and final connecting strokes -->
+              <g class="stage s9">
+                <path class="draw fine" d="M177 280Q214 264 256 269Q298 264 335 280"/>
+                <path class="draw fine" d="M145 394Q256 478 367 394"/>
+              </g>
+            </g>
+          </g>
+        </svg></span></p>
+    <p class="footer-tag">A Visual Travel Journal · 把世界走成一本安静的书</p>
+    <nav class="footer-index" aria-label="页脚导航">
+      <a href="index.html">HOME</a><a href="destinations.html">DESTINATIONS</a><a href="places.html">PLACES</a><a href="journal.html">JOURNAL</a><a href="gallery.html">GALLERY</a><a href="about.html">ABOUT</a>
+    </nav>
+    <span class="footer-rule" aria-hidden="true"></span>
+    <a class="btn footer-contact" href="mailto:onion@humorseth.com?subject=Hello%20Seth"><span>CONTACT</span><span class="btn-arrow" aria-hidden="true">&#8594;</span></a>
+    <p class="footer-copy">&copy; <span data-year></span> The Quiet Atlas · All Rights Reserved</p>
+  </div>
+  <a class="to-top" href="#top">TOP &#8593;</a>
+</footer>
+</body>
+</html>
