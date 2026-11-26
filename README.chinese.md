@@ -1,12 +1,6 @@
 # The Quiet Atlas · 视觉旅行手记
 
-<div align="center">
-
-[![English](https://img.shields.io/badge/English-Readme-3d7ae4?style=for-the-badge)](README.md)
-
-</div>
-
-
+> Language / 语言：[English](README.en.md) · 简体中文
 
 一个静态的个人旅行展示网站（站点名 **The Quiet Atlas**）：多页面、电影级视觉、沉浸式开场 logo 动画与摄影作品集式排版。
 纯 HTML5 + CSS3 + 原生 JavaScript，无框架、无构建步骤、无后端，可直接部署到任意静态托管。
@@ -74,7 +68,6 @@ seth-travels/
 | --- | --- |
 | 站点名称（浏览器标题） | 每个 HTML 的 `<title>`，形如 `PAGE — 栏目 | The Quiet Atlas` |
 | 站点名称（开场文字标） | 开场动画里 Logo 下方淡入的 `The Quiet Atlas` 字样，位于每页 `<p class="intro-brand">`（15 个有开场层的页面，`interests.html` 无开场） |
-| 站点名称（导航栏文字标） | 导航栏 Logo 图标右侧的 `The Quiet Atlas` 字样，位于每页 `.nav-logo` 内的 `<span class="logo-word">` |
 | 个人名字（About 页与首页正文） | `about.html` 的 `<em>Seth</em>`、`index.html` 的 `— Seth` 署名与 `About Seth` 按钮 |
 | 图形 Logo（Horizon 罗盘徽标） | 内联 SVG（每页三处：`.intro` 开场、`.nav-logo`、`.footer-logo`），统一类名 `.logo-horizon`，9 个 `.stage` 分组由外向内描线。SVG 源定义在 `assets/css/main.css` 的 `logo-horizon` 区段（描线动画、时序 `--at`、缓动均可在此调整）；`<link rel="icon">` 指向 `assets/img/favicon.png` 与 `assets/img/favicon.ico`。换图形时替换各页 `<svg class="logo-horizon">…</svg>` 与两个 favicon 即可 |
 | 联系邮箱 | 搜 `onion@humorseth.com`：出现在页脚居中的 `CONTACT` 按钮（`.footer-contact`，`class="btn"`）与移动菜单的 `CONTACT · 联系我`，两处都是标准 `mailto:`（页脚按钮预填主题 `Hello Seth`） |
@@ -82,7 +75,7 @@ seth-travels/
 | 长文旅行经历 | `destinations/*.html` 中 `<div class="story">` 内 5 段正文；`places.html` 中每行的 `<p class="place-story">`；每个详情页的 `.story` 里还各有一张 `<figure class="story-figure">` 插图（居中间距由 `.story-figure` 控制） |
 | 主题色 / 字体 / 间距 | `assets/css/main.css` 顶部 `:root` 自定义属性（`--ink`、`--paper`、`--accent`、`--serif`、`--sans`、`--mono`、`--ease-*` 等） |
 | 动画时长与缓动 | 同上，`:root` 中的 `--ease-*` 变量统一控制；描线动画的时序在各页 `.stage` 的 `--at` 与 `--line-duration` 中（见 `main.css` `logo-horizon` 区段） |
-| 图片 | 全部已本地化在 `assets/img/`（51 张 `.jpg` + 1 张 `.png`，直接相对路径引用，无远程图片依赖）。替换时用同名文件覆盖即可；`.frame`、`.g-item`、`.place-media` 会自动处理裁切 |
+| 图片 | 全部已本地化在 `assets/img/`（53 张 `.jpg` + 1 张 `.png`，直接相对路径引用，无远程图片依赖）。替换时用同名文件覆盖即可；`.frame`、`.g-item`、`.place-media` 会自动处理裁切 |
 | 目的地 / 景点 / 日志内容 | 直接编辑对应的 HTML 文本段落，结构与类名保持不变即可继承全部样式 |
 | 个人介绍与统计数字 | `about.html`（`.stat-num b[data-count]` 的数字会被计数动画读取） |
 
@@ -95,8 +88,8 @@ seth-travels/
 - **无障碍**：语义化标签、跳转到主内容链接、图片 `alt`、可见焦点样式、`aria-current` 标记当前页、灯箱支持 `Esc`/`←`/`→`/`Tab` 焦点循环，并尊重 `prefers-reduced-motion`。
 - **图片策略**：首屏使用 CSS 背景图；其余图片固定宽高比（`width`/`height` 属性 + `aspect-ratio`）以避免布局跳动，`loading="lazy"` + `decoding="async"`，加载失败时优雅降级为色调占位。全部图片本地化，不依赖任何外部图片服务。
 - **字体**：Cormorant Garamond + Inter 已自托管在 `assets/css/fonts.css`（`assets/fonts/*.woff2`，Google Fonts latin 子集），零外部字体依赖，加载失败自动回退到系统衬线/无衬线字体栈。
-- **图片版权**：演示图片共 51 张（`assets/img/`，不依赖远程图床）。其中约 35 张来自 [Unsplash](https://unsplash.com)（Unsplash License：可免费用于商业与非商业用途，无需署名，但不可转售原图），已本地化保存；16 张来自 [Wikimedia Commons](https://commons.wikimedia.org)（自由授权，见下方署名清单）。用于正式发布时，请替换为你自己拍摄或已获授权的照片。
-- **图形标记**：logo 为内联 SVG 的 Horizon 罗盘（罗盘环、星芒、柱门、地平线、轨道与行星、山峦、河流等元素，带描线动画）。导航栏小图标（`class="logo-replay"`）自动循环描线，向下滚动时淡出隐藏、回到顶部再显示，图标右侧带站点名 `The Quiet Atlas`（`<span class="logo-word">`）；页脚小图标为同一 SVG，鼠标悬停时描线一次、播完即停；开场为同一 SVG 的自动播放版本（`class="playing"`）。如需更换图形，替换各页内联 SVG 与 `assets/img/favicon.png` 即可。
+- **图片版权**：演示图片共 53 张（`assets/img/`，不依赖远程图床）。其中约 37 张来自 [Unsplash](https://unsplash.com)（Unsplash License：可免费用于商业与非商业用途，无需署名，但不可转售原图），已本地化保存；16 张来自 [Wikimedia Commons](https://commons.wikimedia.org)（自由授权，见下方署名清单）。用于正式发布时，请替换为你自己拍摄或已获授权的照片。
+- **图形标记**：logo 为内联 SVG 的 Horizon 罗盘（罗盘环、星芒、柱门、地平线、轨道与行星、山峦、河流等元素，带描线动画）。导航栏与页脚小图标为同一 SVG（`class="logo-replay"`），鼠标悬停时描线一次、播完即停；开场为同一 SVG 的自动播放版本（`class="playing"`）。如需更换图形，替换各页内联 SVG 与 `assets/img/favicon.png` 即可。
 - **本地图片**（`assets/img/`，均来自 [Wikimedia Commons](https://commons.wikimedia.org)，自由授权；发布前请按原文件页核对署名要求）：
   - `amalfi-coast.jpg`（阿马尔菲海岸）、`santorini.jpg`（圣托里尼伊亚）、`louvre.jpg`（卢浮宫金字塔夜景）
   - `kyoto-path.jpg`（哲学之道旁运河里的绿头鸭，作者 KimonBerlin，CC BY-SA 2.0）
@@ -112,3 +105,13 @@ seth-travels/
   - `santorini-oia.jpg`（伊亚蓝顶教堂，作者 palindrome6996，CC BY 2.0）
   - `santorini-sunset.jpg`（伊亚落日，作者 Anna.Tsolidou，CC BY-SA 4.0）
   - `santorini-fira.jpg`（费拉白房子钟楼，作者 Dietmar Rabich，CC BY-SA 4.0）
+
+## 6. 验收自测清单
+
+- [x] 首屏品牌 logo 动画（Horizon 罗盘描线揭场，可跳过，每会话仅播放一次）
+- [x] 六个导航入口均为真实页面，当前页高亮，支持前进/后退/直接访问
+- [x] 画廊灯箱：开合、上一张/下一张、键盘、触摸滑动、焦点管理
+- [x] 页脚居中的 `CONTACT` 按钮（`mailto:` 标准协议，点击调用系统邮件客户端并自动填写收件人）
+- [x] 版权年份由 JavaScript 自动写入当前年份
+- [x] 桌面 / 平板 / 手机响应式；无横向溢出
+- [x] 无后端依赖，可任意静态托管
