@@ -239,7 +239,7 @@ a.frame:hover > img, .g-item:hover > img, .strip-item:hover > img { transform: s
 }
 .nav-logo .logo-word { padding-top: .14em; text-transform: uppercase; white-space: nowrap; }
 /* logo 图形标记 · 用户专属徽标（纸白线条，取自图二），随主题反色 */
-.mark { display: inline-flex; align-items: center; height: 1.1em; color: currentColor; }
+.mark { display: inline-flex; align-items: center; justify-content: center; height: 1.1em; color: currentColor; }
 .mark .logo-horizon { display: block; height: 100%; width: auto; }
 .nav-logo .mark { height: 112px; }
 .footer-logo .mark { height: 150px; }
@@ -384,14 +384,11 @@ body.menu-open .nav-menu-foot { opacity: 1; }
 .logo-horizon .stage { opacity: 1; filter: drop-shadow(0 0 4px rgb(241 190 121 / .25)); }
 .logo-horizon .stage .draw { animation-delay: calc(var(--at) + var(--line-delay, 0s)); }
 .logo-horizon .s1 { --at: .08s; }
-.logo-horizon .s2 { --at: .78s; }
-.logo-horizon .s3 { --at: 1.68s; }
-.logo-horizon .s4 { --at: 2.72s; }
-.logo-horizon .s5 { --at: 3.78s; }
-.logo-horizon .s6 { --at: 4.82s; }
-.logo-horizon .s7 { --at: 5.88s; }
-.logo-horizon .s8 { --at: 6.94s; }
-.logo-horizon .s9 { --at: 7.96s; }
+.logo-horizon .s2 { --at: .95s; }
+.logo-horizon .s3 { --at: 1.8s; }
+.logo-horizon .s4 { --at: 2.6s; }
+.logo-horizon .s5 { --at: 3.5s; }
+.logo-horizon .s6 { --at: 4.4s; }
 .logo-horizon .trace-head {
   fill: none;
   stroke: #fff4d9;
@@ -428,6 +425,24 @@ body.menu-open .nav-menu-foot { opacity: 1; }
   animation: guide-out 1.7s ease-out .38s forwards;
 }
 .logo-horizon .vector-art { filter: drop-shadow(0 0 1px rgb(241 190 121 / .08)); }
+/* 徽章化 logo：刻度环 / 光晕 / 琥珀太阳 / 倒影波光 —— 渐显（复用 star-on） */
+.logo-horizon .tick-ring {
+  fill: none; stroke: var(--ivory); stroke-width: 6;
+  stroke-dasharray: 4 11.8;
+  opacity: 0; animation: star-on 1s ease-out calc(var(--at) + .35s) forwards;
+}
+.logo-horizon .sun-glow {
+  fill: none; stroke: #f1be79; stroke-width: 7; stroke-linecap: round;
+  opacity: 0; animation: star-on 1.2s ease-out calc(var(--at) + .2s) forwards;
+}
+.logo-horizon .sun-disc {
+  fill: #f1be79; stroke: none;
+  opacity: 0; animation: star-on .85s ease-out calc(var(--at) + .85s) forwards;
+}
+.logo-horizon .ripple {
+  stroke: #f1be79; stroke-width: 2; stroke-linecap: round;
+  opacity: 0; animation: star-on .55s ease-out calc(var(--at) + var(--ripple-delay, 0s)) forwards;
+}
 
 @keyframes draw-line { to { stroke-dashoffset: 0; } }
 @keyframes star-on { to { opacity: 1; } }
@@ -453,6 +468,10 @@ body.menu-open .nav-menu-foot { opacity: 1; }
 .logo-replay .pole-star { opacity: 1; animation: none; }
 .logo-replay .core-glow { opacity: 0; animation: none; }
 .logo-replay .guide { opacity: 0; animation: none; }
+.logo-replay .tick-ring { opacity: 1; animation: none; }
+.logo-replay .sun-glow { opacity: 1; animation: none; }
+.logo-replay .sun-disc { opacity: 1; animation: none; }
+.logo-replay .ripple { opacity: 1; animation: none; }
 .logo-replay.playing .draw { stroke-dashoffset: 1; animation: draw-line var(--line-duration, 1.08s) cubic-bezier(.2, .7, .24, 1) forwards; }
 .logo-replay.playing .stage .draw { animation-delay: calc(var(--at) + var(--line-delay, 0s)); }
 .logo-replay.playing .trace-head { display: block; }
@@ -460,6 +479,10 @@ body.menu-open .nav-menu-foot { opacity: 1; }
 .logo-replay.playing .pole-star { opacity: 0; animation: star-on .55s cubic-bezier(.16, 1, .3, 1) .98s forwards; }
 .logo-replay.playing .core-glow { opacity: 0; animation: pulse 1.8s ease-out .04s 3; }
 .logo-replay.playing .guide { opacity: 0; animation: guide-out 1.7s ease-out .38s forwards; }
+.logo-replay.playing .tick-ring { opacity: 0; animation: star-on 1s ease-out calc(var(--at) + .35s) forwards; }
+.logo-replay.playing .sun-glow { opacity: 0; animation: star-on 1.2s ease-out calc(var(--at) + .2s) forwards; }
+.logo-replay.playing .sun-disc { opacity: 0; animation: star-on .85s ease-out calc(var(--at) + .85s) forwards; }
+.logo-replay.playing .ripple { opacity: 0; animation: star-on .55s ease-out calc(var(--at) + var(--ripple-delay, 0s)) forwards; }
 
 @media (prefers-reduced-motion: reduce) {
   .logo-horizon .logo-sequence { animation: none; }
@@ -473,6 +496,10 @@ body.menu-open .nav-menu-foot { opacity: 1; }
   .logo-horizon .draw { stroke-dashoffset: 0; animation: none; }
   .logo-horizon .guide { opacity: 0; animation: none; }
   .logo-horizon .trace-head { display: none; }
+  .logo-horizon .tick-ring,
+  .logo-horizon .sun-glow,
+  .logo-horizon .sun-disc,
+  .logo-horizon .ripple { opacity: 1; animation: none; }
 }
 
 /* ---------- 首屏 ---------- */
